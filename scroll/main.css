@@ -1,0 +1,19 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f1f1f1;
+  min-height: 5000px;
+}
+
+.scroller {
+  position: fixed;
+  background-color: #0075ff;
+  top: 0;
+  left: 0;
+  height: 5px;
+  width: 0;
+}

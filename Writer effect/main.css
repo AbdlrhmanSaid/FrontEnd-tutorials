@@ -1,0 +1,57 @@
+:root {
+  --main-color: rgb(255 255 255 / 80%);
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+}
+p {
+  color: var(--main-color);
+  font-size: 24px;
+  letter-spacing: 2px;
+  text-shadow: 0 0 10px black;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: 288px;
+  margin: 20px auto;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 5px solid var(--main-color);
+  -webkit-animation: control-width 3s steps(22) both, blink infinite 0.5s;
+  animation: control-width 3s steps(22) both, blink infinite 0.5s;
+}
+@-webkit-keyframes control-width {
+  from {
+    width: 0;
+  }
+  to {
+    width: 418px;
+  }
+}
+@keyframes control-width {
+  from {
+    width: 0;
+  }
+  to {
+    width: 288px;
+  }
+}
+@-webkit-keyframes blink {
+  from {
+    border-right-color: var(--main-color);
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
+@keyframes blink {
+  from {
+    border-right-color: var(--main-color);
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
